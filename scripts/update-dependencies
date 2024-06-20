@@ -12,6 +12,6 @@ sed_i=(sed -i)
 if [[ "$(uname)" == "Darwin" ]]; then
   sed_i+=("")
 fi
-"${sed_i[@]}" 's#load("@bazel_gazelle//:deps\.bzl", "go_repository")#load("//:third_party/go/go_repository.bzl", "go_repository")#' third_party/go/deps.bzl
+"${sed_i[@]}" 's#load("@gazelle//:deps\.bzl", "go_repository")#load("//:third_party/go/go_repository.bzl", "go_repository")#' third_party/go/deps.bzl
 
 "${SCRIPT_DIR}"/format

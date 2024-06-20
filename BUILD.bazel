@@ -1,4 +1,4 @@
-load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@gazelle//:def.bzl", "gazelle")
 
 # gazelle:resolve go github.com/bazelbuild/bazel-gazelle/label @com_github_bazelbuild_bazel_gazelle//label
 

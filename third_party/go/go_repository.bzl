@@ -1,4 +1,4 @@
-load("@bazel_gazelle//:deps.bzl", _go_repository = "go_repository")
+load("@gazelle//:deps.bzl", _go_repository = "go_repository")
 
 def go_repository(**kwargs):
     if "build_external" in kwargs:
